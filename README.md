@@ -17,7 +17,7 @@ This will place the files in the dotnet default directory for certificates `$HOM
 1. `chmod +x dev-cert.sh`
 2. `./dev-cert.sh`
 3. Provide password for the certificate when prompted
-4. `sudo trust anchor $HOME/.aspnet/https/ca.crt`
+4. `sudo trust anchor $HOME/.aspnet/https/ca.crt` or any directory you can put. edit the `.sh` file for proper path mapping. e.g. `home/user/https/`
 5. Update the app launch.json with the certificate's path & password
     `"env": {
         "ASPNETCORE_ENVIRONMENT": "Development",
