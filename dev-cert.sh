@@ -24,5 +24,5 @@ END
 
 openssl pkcs12 -export -out "$path/$domain".pfx -inkey "$path/$domain".key -in "$path/$domain".crt
 
-#Arch Linux trust certificate system wide
+#Arch Linux trust certificate system wide and don't forget to give full read/write acess to this folder
 #sudo trust anchor $HOME/.aspnet/https/ca.crt
